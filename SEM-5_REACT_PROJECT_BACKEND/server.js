@@ -22,7 +22,7 @@ app.use(
     credentials: true,
   }),
 );
-
+app.use(cors()); // allow all origins
 app.use("/api/admin", adminRouter);
 app.use("/api/doctor", doctorRouter);
 app.use("/api/user", userRouter);
