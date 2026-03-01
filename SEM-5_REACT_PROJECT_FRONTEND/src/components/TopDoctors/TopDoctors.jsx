@@ -7,6 +7,10 @@ import { Appcontext } from "../../context/Appcontext";
 const TopDoctors = () => {
   const navigate = useNavigate();
   const { doctors } = useContext(Appcontext);
+  if (doctors.length === 0) {
+    return <p>Loading top doctors...</p>;
+  }
+
   return (
     <div className="doctor">
       <h1>Top Doctors to Book</h1>
