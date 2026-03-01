@@ -5,6 +5,7 @@ export const Appcontext = createContext();
 
 const AppcontextProvider = (props) => {
   const backendUrl = import.meta.env.VITE_BACKEND_URL;
+  console.log(import.meta.env.VITE_BACKEND_URL);
   const [doctors, setDoctors] = useState([]);
   const [token, setToken] = useState("");
   const [userData, setUserData] = useState(false);
