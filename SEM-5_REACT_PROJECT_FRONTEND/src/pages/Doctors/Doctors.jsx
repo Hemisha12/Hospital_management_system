@@ -17,9 +17,22 @@ const DoctorCards = () => {
     }
   }, [doctors, speciality]);
 
+  // useEffect(() => {
+  //   applyfilter();
+  // }, [applyfilter]);
   useEffect(() => {
-    applyfilter();
-  }, [applyfilter]);
+    if (doctors.length > 0) {
+      // ensure data fetch ho chuka
+      if (speciality) {
+        setfilterdoc(doctors.filter((doc) => doc.department === speciality));
+      } else {
+        setfilterdoc(doctors);
+      }
+    }
+  }, [doctors, speciality]);
+  if (doctors.length === 0) {
+    return <p>Loading doctors...</p>;
+  }
 
   return (
     <>
