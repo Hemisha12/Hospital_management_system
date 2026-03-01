@@ -1,0 +1,120 @@
+/* /* .sidebar {
+  min-height: 100vh;
+  border-right: 1px solid #ddd; /* cleaner border
+  margin-top: 50px;
+  /* match ul background
+
+
+.ul {
+
+  background: linear-gradient(to right, #4db6ac, #1e3c72);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: fixed;
+}
+
+.my-link {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  border-left: 4px solid transparent;
+  transition: all 0.3s ease;
+  font-weight: 300;
+  background-color: transparent;
+}
+
+.my-link:hover {
+  background: linear-gradient(to right, #1e3c72, #4db6ac);
+}
+
+.my-link.active {
+  background: linear-gradient(
+    to right,
+    #1e3c72,
+    #4db6ac
+  );
+  border-right: 4px solid white;
+  font-weight: 500;
+  color: #111;
+} */
+
+/* @media (min-width: 768px) {
+  .my-link {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+    min-width: 18rem;  288px
+  }
+}
+*/
+
+.sidebar {
+  min-height: 100vh;
+
+  margin-top: 50px;
+  border-right: 1px solid #ddd; /* cleaner border */
+  /* match ul background */
+}
+
+.ul {
+  /* enough space for text */
+  /* height: 100vh; */
+  background: linear-gradient(to right, #4db6ac, #1e3c72);
+  margin: 0;
+  width: 300px;
+  min-height: 100vh;
+  padding: 0;
+  position: fixed;
+  list-style: none;
+}
+.ul p {
+  font-size: 25px;
+}
+.ul img {
+  width: 30px;
+  height: 30px;
+}
+.my-link {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  gap: 12px; /* spacing between icon and text */
+  padding: 14px 20px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  border-left: 4px solid transparent;
+  transition: all 0.3s ease;
+  font-weight: 300;
+  background-color: transparent;
+}
+
+.my-link:hover {
+  background: linear-gradient(to right, #1e3c72, #4db6ac);
+}
+
+.my-link.active {
+  background: linear-gradient(
+    to right,
+    #1e3c72,
+    #4db6ac
+  ); /* active background */
+  border-right: 4px solid white; /* left border */
+  font-weight: 500;
+  width: 250px;
+  color: #111;
+}
+
+/* @media (min-width: 768px) {
+  .my-link {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+    min-width: 18rem;  288px
+  }
+}
+*/

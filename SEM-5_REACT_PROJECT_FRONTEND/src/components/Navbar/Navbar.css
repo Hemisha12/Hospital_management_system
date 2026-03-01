@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+}
+
+.logo img {
+  height: 100px;
+  width: 200px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.nav-links a {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #052bc2;
+}
+
+.button-link {
+  padding: 8px 22px;
+  border-radius: 50px;
+  border: 2px solid black;
+  background-color: white;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-link:hover {
+  background-color: #1f2b5b;
+  color: white;
+}
+.profile_icon {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+/* .profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+} */
+
+.dropdown-list {
+  width: 12px;
+  margin-left: 10px;
+}
+
+/*
+.profile_info {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  width: 160px;
+  padding: 8px 0;
+  z-index: 100;
+}
+
+.profile_info p {
+  padding: 10px 15px;
+  margin: 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+.profile_info p:hover {
+  color: red;
+}
+
+.profile_info {
+  display: none;
+}
+
+.profile_icon:hover .profile_info,
+.profile_info.show {
+  display: block;
+} */
+.profile_icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profile {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile_info {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 170px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  padding: 8px 0;
+  z-index: 9999;
+}
+
+.profile_info p {
+  margin: 0;
+  padding: 10px 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.profile_info p:hover {
+  background: #f5f5f5;
+}

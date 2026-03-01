@@ -1,0 +1,125 @@
+/* Container for all cards */
+.card-wrapper1 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 40px;
+  justify-items: center;
+}
+
+/* Each flip card container */
+.card-wrapper {
+  perspective: 1000px;
+  margin-top: 10px;
+}
+
+/* Flip card inner */
+.flip-card {
+  width: 200px;
+  height: 300px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.flip-card:hover {
+  transform: rotateY(180deg);
+}
+
+/* Front & back sides */
+.card-side {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  background: #fff;
+}
+
+/* Front image styling */
+.card-front img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.card-front h3 {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Back side */
+.card-back {
+  transform: rotateY(180deg);
+  text-align: left;
+  background-color: #ffffff;
+  color: #333;
+  padding-top: 10px;
+}
+
+.card-back img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.card-back ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.card-back li {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+.get-app {
+  margin-top: 40px;
+  justify-content: center;
+  background: linear-gradient(to right, #1eb3ad, #1c2a5b);
+  color: white;
+  padding: 5px;
+}
+.get-app:hover {
+  background: linear-gradient(to right, #1c2a5b, #1eb3ad);
+}
+.dr-info li {
+  margin-top: 15px;
+}
+
+/* Department*/
+.departments {
+  /* margin-top: 150px; */
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.dept-card {
+  background: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  /* border: 1px solid black; */
+}
+
+.dept-card:hover {
+  background: linear-gradient(to right, #1eb3ad, #1c2a5b);
+  color: white;
+  transform: translateY(-3px);
+}
+
+.dept-card.active {
+  background: linear-gradient(to right, #1eb3ad, #1c2a5b);
+  color: white;
+}

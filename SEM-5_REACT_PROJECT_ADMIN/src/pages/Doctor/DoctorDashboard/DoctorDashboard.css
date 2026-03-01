@@ -1,0 +1,146 @@
+.dashboard {
+  padding: 20px;
+  background-color: #f9f9f9;
+  width: 100%;
+  margin-left: 300px;
+}
+
+.dashboard-cards-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.dashboard-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: calc(33.33% - 20px);
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-card img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-number {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-label {
+  font-size: 25px;
+  color: #666;
+}
+
+.latest-bookings-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section-heading img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.section-heading span {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.booking-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.doctor-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.booking-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.doctor-name {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.booking-info {
+  font-size: 23px;
+  color: #666;
+}
+
+.cancel-add {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.cancel-add img {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.no-bookings {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  color: #666;
+}
+.complete {
+  color: green;
+}
+.cancel {
+  color: red;
+  font-size: 20px;
+}
+.cancel-button img {
+  width: 50px;
+  height: 50px;
+  /* opacity: 0.6;
+  transition: opacity 0.2s ease; */
+  background-color: #fff;
+}
+.status-cancelled {
+  margin-left: auto;
+  font-size: 18px;
+  font-weight: 600;
+  color: #dc3545;
+}

@@ -1,0 +1,71 @@
+.doctor-appointments {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  margin-top: 30px;
+  margin-left: 320px;
+}
+
+.doctor-appointments h2 {
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #333;
+}
+
+.table-header,
+.table-row {
+  display: grid;
+
+  grid-template-columns: 20px 200px 100px 250px 100px 100px;
+  align-items: center;
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  justify-content: space-between;
+  width: 98%;
+}
+
+.table-header {
+  background: #f4f6f9;
+  font-weight: 600;
+  color: #444;
+  justify-content: space-between;
+}
+p {
+  font-size: 20px;
+}
+.table-row:hover {
+  background: #fafafa;
+}
+
+.patient-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.patient-info img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #ccc;
+}
+
+.payment {
+  font-weight: 500;
+}
+
+.payment.online {
+  color: green;
+}
+
+.payment.cash {
+  color: #d35400;
+}
+.complet {
+  color: green;
+}
+.cancel {
+  color: red;
+}

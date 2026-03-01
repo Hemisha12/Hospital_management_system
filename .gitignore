@@ -1,0 +1,8 @@
+node_modules/
+.env
+dist/
+build/
+
+SEM-5_REACT_PROJECT_ADMIN/node_modules/
+SEM-5_REACT_PROJECT_BACKEND/node_modules/
+SEM-5_REACT_PROJECT_FRONTEND/node_modules/

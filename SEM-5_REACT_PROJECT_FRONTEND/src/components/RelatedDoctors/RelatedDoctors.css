@@ -1,0 +1,77 @@
+.doctor {
+  text-align: center;
+  padding: 40px;
+}
+
+.doctor h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.doctor p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.doctor-sec {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.doctor-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+  width: 300px;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+}
+
+.doctor-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  background-color: #f2f8ff; /* Light blue background */
+  margin-bottom: 15px;
+}
+
+.doctor-info {
+  text-align: left;
+}
+
+.doctor-avl {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.doctor-avl p {
+  color: #2ecc71; /* Green text for 'Available' */
+  font-weight: 500;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #2ecc71;
+  border-radius: 50%;
+}
+
+.doctor-name {
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+}
+
+.doctor-department {
+  font-size: 14px;
+  color: #777;
+}

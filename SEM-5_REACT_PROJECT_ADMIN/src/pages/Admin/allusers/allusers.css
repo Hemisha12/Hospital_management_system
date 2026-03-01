@@ -1,0 +1,91 @@
+/* Container styling */
+.admin-users-list {
+  background-color: #fcfcfc;
+  min-height: 100vh;
+  padding: 30px;
+  margin-left: 400px;
+}
+
+.admin-users-list h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Table Wrapper for responsiveness */
+.table-container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  border: 1px solid #e1e1e1;
+}
+
+/* Table Styling */
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.users-table thead {
+  background-color: #f8f9ff;
+  border-bottom: 2px solid #5f6fff;
+}
+
+.users-table th {
+  padding: 15px 20px;
+  font-weight: 600;
+  color: #4b5563;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+.users-table td {
+  padding: 14px 20px;
+  border-bottom: 1px solid #f1f1f1;
+  color: #4b5563;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+/* Row Hover Effect */
+.users-table tbody tr:hover {
+  background-color: #f9faff;
+  transition: all 0.2s ease;
+}
+
+/* Image Styling */
+.user-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #5f6fff;
+  background-color: #eee;
+}
+
+/* No data message */
+.no-data {
+  text-align: center;
+  padding: 40px !important;
+  color: #999;
+  font-style: italic;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+  .admin-users-list {
+    padding: 15px;
+  }
+  .users-table th,
+  .users-table td {
+    padding: 10px;
+    font-size: 12px;
+  }
+}

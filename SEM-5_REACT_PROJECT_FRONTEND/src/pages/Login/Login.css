@@ -1,0 +1,112 @@
+/* Background overlay */
+h1{
+  font-size: 90px;
+  margin-left: 10%;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal box */
+.modal-dialog {
+  background: white;
+  color: black;
+  padding: 30px;
+  border-radius: 12px;
+  position: relative;
+  width: 350px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Close button */
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 22px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+
+/* Title */
+.modal-dialog h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Input group with icon */
+.input-group {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.input-group .icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  background-color: white;
+  margin-top: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 12px 12px 36px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.input-group input:focus {
+  border-color: #1a73e8;
+}
+
+/* Button */
+.login-btn {
+  background: linear-gradient(to right, #4db6ac, #1e3c72);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 19px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background: linear-gradient(to right, #1e3c72, #4db6ac);
+}
+
+/* Footer */
+.footer-text {
+  margin-top: 15px;
+  font-size: 19px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.footer-text a {
+  color: #5a2d82;
+  text-decoration: none;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
+}
+.toggle-link {
+  color: #4db6ac;
+  font-size: 19px;
+}

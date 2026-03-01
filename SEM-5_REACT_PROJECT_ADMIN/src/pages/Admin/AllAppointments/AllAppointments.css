@@ -1,0 +1,101 @@
+/* Container for the entire appointments page content */
+.all-appointments-container {
+  padding: 30px;
+  background-color: #f0f4f9;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  margin-left: 320px;
+  margin-top: 50px;
+}
+
+/* Heading for the appointments section */
+.all-appointments-container h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* Wrapper for the table to apply background and shadow */
+.appointments-table-wrapper {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden; /* Ensures table content respects border-radius */
+}
+
+/* Base table styling */
+.appointments-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Header row styling */
+.appointments-table thead tr {
+  background-color: transparent;
+  color: #666;
+  text-align: left;
+}
+
+/* Table header and data cells */
+.appointments-table th,
+.appointments-table td {
+  padding: 15px 20px;
+  border-bottom: 1px solid #f0f0f0; /* Light border between rows */
+  font-size: 20px;
+}
+
+.appointments-table th {
+  font-weight: 600;
+}
+
+/* Table body rows */
+.appointments-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.appointments-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Styling for the Patient column (image and name) */
+.patient-cell {
+  display: flex;
+  align-items: center;
+}
+
+.patient-cell img {
+  width: 45px;
+  height: 53px;
+  border-radius: 50%;
+  margin-right: 12px;
+  object-fit: cover;
+  border: 2px solid #e0e0e0;
+}
+
+/* Styling for the first column (#) */
+.appointments-table td:first-child {
+  font-weight: 500;
+  color: #333;
+}
+
+/* Message displayed when there are no appointments */
+.no-appointments-message {
+  text-align: center;
+  font-style: italic;
+  color: #999;
+  padding: 20px;
+}
+
+/*cancel-btn */
+.cancel-btn {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  margin-left: 15%;
+}
+.cancel {
+  color: red;
+  font-size: 50px;
+}

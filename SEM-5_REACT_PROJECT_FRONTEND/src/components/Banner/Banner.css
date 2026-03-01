@@ -1,0 +1,44 @@
+.contain-bg {
+  background: linear-gradient(to right, #1eb3ad, #1c2a5b);
+  border-radius: 1rem; /* Tailwind rounded-2xl = 16px */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 2rem; /* py-12 px-8 */
+  margin-left: 200px;
+  margin-right: 200px;
+  color: white;
+}
+.app_img {
+  font-size: 2rem; /* text-3xl */
+  line-height: 1.4;
+
+  margin: 0.2rem 0;
+}
+.text-size p {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 4px;
+  color: white;
+}
+.banner-btn {
+  margin-top: 1.5rem; /*this is fifth commit and push*/
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 9999px; /* rounded-full */
+  background-color: white;
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+.banner-btn:hover {
+  background: #f3f4f6;
+}
+.contain-bg img {
+  width: 280px; /* match screenshot size */
+  object-fit: contain;
+  margin-right: 170px;
+}

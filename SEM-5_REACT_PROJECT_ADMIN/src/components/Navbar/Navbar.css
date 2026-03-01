@@ -1,0 +1,51 @@
+.admin-info {
+  display: flex;
+  justify-content: space-between;
+}
+.admin-logo {
+  display: flex;
+}
+.admin-logo .token {
+  margin-top: 50px;
+  margin-left: 6px;
+  width: 70px;
+  height: 25px;
+  border-radius: 12px; /* smooth rounded corners */
+  border: 1px solid black;
+  background-color: white;
+  color: black; /* final color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px; /* optional, adjust as needed */
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* optional subtle shadow */
+  transition: all 0.3s ease;
+}
+
+.admin-logo img {
+  width: 200px;
+  height: 100px;
+}
+
+.logout {
+  border-radius: 25px 25px 25px 25px;
+  width: 100px;
+  height: 50px;
+  margin-top: 25px;
+  background: linear-gradient(to right, #4db6ac, #1e3c72);
+  color: white;
+}
+.logout:hover {
+  background: linear-gradient(to right, #1e3c72, #4db6ac);
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 98%;
+  z-index: 1000; /* ensures navbar stays above other elements */
+  background: white; /* or your preferred background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* optional shadow */
+  padding: 0 20px;
+}
