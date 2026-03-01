@@ -29,15 +29,19 @@ const AppcontextProvider = (props) => {
     try {
       console.log("Fetching doctors from backend...");
       const { data } = await axios.get(`${backendUrl}/api/doctor/list`);
-      console.log("Doctors API Response:", data); // <-- ye add karo
+      console.log("Doctors API Response:", data);
       if (data.success) {
         setDoctors(data.doctors);
-        console.log("Doctors state updated:", data.doctors); // <-- aur ye
+        console.log("Doctors state updated:", data.doctors);
       } else {
+        console.log("Doctors API returned success: false", data.message);
         toast.error(data.message);
       }
     } catch (error) {
-      console.log("Doctors fetch error:", error);
+      console.log(
+        "Doctors fetch error:",
+        error.response ? error.response.data : error.message,
+      );
       toast.error(error.message);
     }
   };
