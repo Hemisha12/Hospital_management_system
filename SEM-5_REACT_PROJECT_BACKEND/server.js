@@ -15,7 +15,13 @@ connectDB();
 
 //middlewares
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://citycare.pages.dev", // frontend domain
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  }),
+);
 
 app.use("/api/admin", adminRouter);
 app.use("/api/doctor", doctorRouter);
