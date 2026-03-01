@@ -298,3 +298,93 @@ main {
 .img-icon {
   background-color: #c9f0ff;
 }
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .logo img {
+    height: 55px;
+  }
+
+  .nav-links {
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    margin: 10px;
+    font-size: 16px;
+  }
+
+  /* Section 1 */
+  .section1 {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .text-container1 h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .text-container1 p {
+    font-size: 18px;
+  }
+
+  /* Section 2 */
+  .section2 {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .text-container2 h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .text-container2 p {
+    font-size: 18px;
+    margin-left: 0;
+  }
+
+  .image-container1 img,
+  .image-container2 img {
+    max-width: 100%;
+  }
+
+  /* Hex Grid */
+  .hex {
+    width: 90%;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .hex h3 {
+    font-size: 20px;
+  }
+
+  .hex p {
+    font-size: 16px;
+  }
+
+  /* Footer */
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .footer-content-left,
+  .footer-content-center,
+  .footer-content-right {
+    align-items: center;
+  }
+}
