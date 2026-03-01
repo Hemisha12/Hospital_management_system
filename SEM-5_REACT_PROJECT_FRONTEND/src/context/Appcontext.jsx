@@ -6,7 +6,8 @@ export const Appcontext = createContext();
 const AppcontextProvider = (props) => {
   console.log("CHECKING");
   console.log(import.meta.env.VITE_BACKEND_URL);
-  const backendUrl = import.meta.env.VITE_BACKEND_URL;
+  const backendUrl =
+    import.meta.env.VITE_BACKEND_URL || "http://localhost:4000";
 
   const [doctors, setDoctors] = useState([]);
   const [token, setToken] = useState("");
