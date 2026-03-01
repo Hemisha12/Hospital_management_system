@@ -23,7 +23,7 @@ const DoctorCards = () => {
 
   return (
     <>
-      {/* Departments     */}
+      {/* Departments section */}
       <div className="departments">
         <div
           onClick={() =>
