@@ -17,7 +17,7 @@ connectDB();
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://citycare.pages.dev/", // frontend domain
+    origin: "https://citycare.pages.dev", // frontend domain
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   }),
