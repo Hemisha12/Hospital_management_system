@@ -11,17 +11,33 @@ const AppcontextProvider = (props) => {
   const [doctors, setDoctors] = useState([]);
   const [token, setToken] = useState("");
   const [userData, setUserData] = useState(false);
+  // const getDoctorData = async () => {
+  //   console.log("Backend URL:", backendUrl);
+  //   try {
+  //     const { data } = await axios.get(backendUrl + "/api/doctor/list");
+  //     if (data.success) {
+  //       setDoctors(data.doctors);
+  //     } else {
+  //       toast.error(data.message);
+  //     }
+  //   } catch (error) {
+  //     console.log(error);
+  //     toast.error(error.message);
+  //   }
+  // };
   const getDoctorData = async () => {
-    console.log("Backend URL:", backendUrl);
     try {
-      const { data } = await axios.get(backendUrl + "/api/doctor/list");
+      console.log("Fetching doctors from backend...");
+      const { data } = await axios.get(`${backendUrl}/api/doctor/list`);
+      console.log("Doctors API Response:", data); // check what comes here
       if (data.success) {
         setDoctors(data.doctors);
+        console.log("Doctors state updated:", data.doctors);
       } else {
         toast.error(data.message);
       }
     } catch (error) {
-      console.log(error);
+      console.log("Doctors fetch error:", error);
       toast.error(error.message);
     }
   };
