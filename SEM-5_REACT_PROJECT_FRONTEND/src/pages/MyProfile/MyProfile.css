@@ -169,3 +169,43 @@ body,
 .section p {
   font-size: 19px;
 }
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  body,
+  .App {
+    padding: 15px; /* Side se space */
+    align-items: flex-start; /* Top se start */
+  }
+
+  .profile-card {
+    width: 100%;
+    padding: 15px;
+    margin: 20px 0;
+  }
+
+  .profile-name {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .section h3 {
+    font-size: 16px;
+  }
+
+  .section p {
+    font-size: 14px;
+  }
+
+  .profile-input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .btn {
+    width: 100%; /* Full width buttons */
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+}

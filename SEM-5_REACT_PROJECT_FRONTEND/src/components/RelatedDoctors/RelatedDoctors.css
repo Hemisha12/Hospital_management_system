@@ -75,3 +75,41 @@
   font-size: 14px;
   color: #777;
 }
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .doctor {
+    padding: 20px;
+  }
+
+  .doctor h1 {
+    font-size: 22px;
+  }
+
+  .doctor p {
+    font-size: 14px;
+  }
+
+  .doctor-sec {
+    grid-template-columns: 1fr; /* Single column */
+    gap: 20px;
+  }
+
+  .doctor-card {
+    width: 100%; /* Full width */
+    padding: 15px;
+  }
+
+  .doctor-card img {
+    width: 100%;
+    height: 180px;
+  }
+
+  .doctor-name {
+    font-size: 15px;
+  }
+
+  .doctor-department {
+    font-size: 13px;
+  }
+}

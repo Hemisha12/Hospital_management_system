@@ -1,5 +1,5 @@
 /* Background overlay */
-h1{
+h1 {
   font-size: 90px;
   margin-left: 10%;
 }
@@ -109,4 +109,39 @@ h1{
 .toggle-link {
   color: #4db6ac;
   font-size: 19px;
+}
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px; /* 90px se reduce */
+    margin-left: 20px;
+  }
+
+  .modal-dialog {
+    width: 90%; /* Fixed 350px hata ke responsive */
+    padding: 20px;
+  }
+
+  .modal-dialog h2 {
+    font-size: 18px;
+  }
+
+  .input-group input {
+    font-size: 13px;
+    padding: 10px 10px 10px 34px;
+  }
+
+  .login-btn {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .footer-text {
+    font-size: 14px;
+  }
+
+  .toggle-link {
+    font-size: 14px;
+  }
 }

@@ -68,3 +68,36 @@
   font-size: 14px;
   text-align: center;
 }
+/* ================= MOBILE RESPONSIVE FOOTER ================= */
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 20px;
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr; /* 3 column → 1 column */
+    gap: 40px;
+  }
+
+  .footer-content-left,
+  .footer-content-center,
+  .footer-content-right {
+    align-items: center; /* left se center */
+  }
+
+  .footer-content h2 {
+    font-size: 18px;
+  }
+
+  .footer-content a,
+  .footer-content li {
+    font-size: 16px;
+  }
+
+  .footer-bottom {
+    font-size: 13px;
+  }
+}

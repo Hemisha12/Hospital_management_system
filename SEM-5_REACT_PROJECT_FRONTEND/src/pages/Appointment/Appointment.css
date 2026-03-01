@@ -145,3 +145,61 @@ button {
   background-color: #4db6ac;
   color: white;
 }
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .doc-info {
+    flex-direction: column; /* Side by side se column */
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .doc-img img {
+    width: 100%; /* Full width image */
+    margin-right: 0;
+  }
+
+  .doc-details {
+    width: 100%; /* Remove 1000px fixed width */
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .doc-details .name {
+    font-size: 20px;
+  }
+
+  .doc-dateTime {
+    flex-wrap: wrap; /* Wrap if needed */
+    gap: 8px;
+  }
+
+  .dateTime .date {
+    padding: 12px 14px;
+    font-size: 13px;
+  }
+
+  .dateTime .time {
+    font-size: 12px;
+  }
+
+  .doc-Time {
+    gap: 8px;
+  }
+
+  .time-slot-btn {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+
+  .dr-book-app {
+    width: 100%; /* Full width button */
+    font-size: 16px;
+    padding: 12px;
+    text-align: center;
+  }
+
+  .expe {
+    font-size: 13px;
+  }
+}

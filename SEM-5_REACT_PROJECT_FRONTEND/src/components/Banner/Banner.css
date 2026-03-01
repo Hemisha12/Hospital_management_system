@@ -42,3 +42,32 @@
   object-fit: contain;
   margin-right: 170px;
 }
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .contain-bg {
+    flex-direction: column;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 2rem 1.5rem;
+  }
+
+  .text-size p {
+    font-size: 24px;
+  }
+
+  .app_img {
+    font-size: 18px;
+  }
+
+  .banner-btn {
+    font-size: 16px;
+    padding: 0.5rem 1.2rem;
+  }
+
+  .contain-bg img {
+    width: 200px;
+    margin: 20px 0 0 0;
+  }
+}
