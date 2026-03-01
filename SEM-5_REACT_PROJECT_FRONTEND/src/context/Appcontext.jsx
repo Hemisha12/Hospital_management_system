@@ -29,10 +29,10 @@ const AppcontextProvider = (props) => {
     try {
       console.log("Fetching doctors from backend...");
       const { data } = await axios.get(`${backendUrl}/api/doctor/list`);
-      console.log("Doctors API Response:", data); // check what comes here
+      console.log("Doctors API Response:", data); // <-- ye add karo
       if (data.success) {
         setDoctors(data.doctors);
-        console.log("Doctors state updated:", data.doctors);
+        console.log("Doctors state updated:", data.doctors); // <-- aur ye
       } else {
         toast.error(data.message);
       }
